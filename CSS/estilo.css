@@ -1,0 +1,72 @@
+body {
+    
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    font-size: 15px; /* Tamaño de letra en píxeles */
+
+    
+
+    background-image: url('img/camara.jpg');
+    background-size: cover; /* Ajustar tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* No repetir la imagen en caso de que sea más pequeña */
+    position: relative; /* Establece la posición relativa para posicionar el logo */
+}
+
+#logo {
+  position: absolute; /* Establece la posición absoluta para el logo */
+  top: 50px; /* Distancia desde la parte superior de la página */
+  left: 50px; /* Distancia desde la izquierda de la página */
+  width: 150px; /* Tamaño del logo */
+  height: 150px;
+  border: 2px solid #fff; /* Agrega un borde sólido de 2 píxeles de color blanco */
+    
+}
+  
+  #drop-area {
+    border: 10px dashed #e810c7bd;
+    padding: 100px;
+    text-align: center;
+    width: 210px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Cambia el tipo de letra a Arial o cualquier otro que desees */
+    color: rgb(255, 0, 208); /* Cambia el color del texto a rojo */
+
+    background-image: url('img/saturno.jpg');
+    border-radius: 10px; /* Esquinas redondeadas de 10 píxeles */
+    
+
+     /* Establecer transparencia (50% de opacidad) */
+     opacity: 0.7; /* Cambia este valor para ajustar la transparencia (0.0 - 1.0) */
+
+    /* Agrega otros estilos si lo deseas */
+  }
+  
+  #loader {
+    display: inline-block;
+    border: 4px solid #2b6f92;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    margin-right: 10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  #uploaded-image {
+    display: block;
+    margin: 0 auto;
+  }
+  
